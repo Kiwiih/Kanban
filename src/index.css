@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .board-column{
+    background-color: rgba(255, 255, 255, 0.636);
+    padding: 0.5em;
+    margin: 1em;
+    width: 25vh;
+    height: 70vh;
+    /* opacity: 80%; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px rgba(94, 126, 94, 0.547);
+  }
+  .column-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3em;
+    border-bottom: 1px rgb(194, 231, 169) solid;
+  }
+  .link{
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+  }
+  body{
+     background-color: rgb(193, 218, 161);
+  }
+  main{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+   
+  }
+  h1{
+    text-align: center;
+    opacity: 80%;
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 2px 2px rgba(94, 126, 94, 0.547);
+    height: 10vh;
+  }
+
+  .tasks{
+    color: black;
+    padding: 1em;
+    border-radius: 10px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5em;
+    /* width: 100%; */
+  }
+
+ .moveArrow{
+    background-color: white;
+    border: none;
+    font-size: 1.5em;
+  }
+  .taskInfo{
+    padding-bottom: 0.3em;
+  }
+  h3{
+    padding-bottom: 0.5em;
+  }
+
+  .taskButtons{
+    text-align: center;
+  }
+
+  .add-task_section{
+    text-align: center;
+  }
+  .addForm{
+    margin-top: 1em;
+  }
+  input{
+    flex-direction: column;
+    padding: 0.7em;
+    margin: 0.2em;
+    cursor: pointer;
+    background-color: rgb(221, 247, 214);
+    border: none;
+    border-radius: 10px;
+  }
+
+  .submit-button{
+    box-shadow: 2px 2px 4px 4px rgba(94, 126, 94, 0.547);
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .missing{
+    flex-direction: column;
+    text-align: center;
+    line-height: 3em;
+    background-color: rgba(255, 255, 255, 0.636);
+    padding: 1em;
+    border-radius: 15px;
+  }
+  .missingLink{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .MissingPic{
+    width: 50%;
+    margin: auto;
+  }
+
+  .taskModal{
+    background-color: rgba(193, 218, 161, 0.925);
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px 6px rgba(98, 98, 98, 0.692);
+    z-index: 100;
+    position: fixed;
+    top: 35%; 
+    left: 45%; 
+    transform: translate(-35%, -45%); 
+    width: 40em;
+    height: 30em;
+  }
+
+ .edit-task-form{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+ }
+ .editContentInput{
+  width: 100%;
+  padding: 0.5em;
+  margin: auto;
+  height: 80%;
+  border-radius: 15px;
+  background-color: rgb(221, 247, 214);
+  border: none;
+ }
+ .submitButton{
+  width: 20%;
+  margin: auto;
+  padding: 0.3em;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(254, 254, 254);
+ }
+ .closeBtn{
+  border: none;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+ }
+
+.trash{
+  font-size: 2em;
+  color: rgb(164, 37, 37); 
+}
+.trashDiv{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.3em;
+}
+.modal-Header_Div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addColumnButton{
+  width: 2em;
+  height: 2em;
+  border-radius: 15px;
+  font-size: 1em;
+  border: none;
+  background-color: azure;
+}
+.addNewColumn-btnSection{
+    align-items: center;
+    width: 0px;
+    margin: 0px;
+    justify-content: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(234, 234, 232);
+  padding-bottom: 2em;
+  padding-top: 0.5em;
+  box-shadow: 2px 2px 2px 2px rgba(94, 126, 94, 0.547);
+  font-size: 1em;
+  height: 10vh;
+}
+.footer-icon{
+  font-size: 2em;
+  color: black;
+
+}
+.column-trash{
+  width: 20%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: large;
+}
